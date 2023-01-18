@@ -16,7 +16,7 @@
   <header class="bg-black bg-fixed h-screen bg-cover bg-no-repeat bg-left md:bg-center"
     style="background-image: url(/images/үүл\ 2.png);">
     <nav
-      class="myContainer fixed md:static px-5 flex justify-between items-center w-full bg-black md:bg-transparent h-[80px] md:h-[140px]">
+      class="myContainer z-50 fixed md:static px-5 flex justify-between items-center w-full bg-black md:bg-transparent h-[80px] md:h-[140px]">
       <a href="/">
         <img src="images/logo.png" class="h-[60px] md:h-[115px]" />
       </a>
@@ -24,8 +24,11 @@
         <i class="fa-sharp fa-solid fa-bars"></i>
       </div>
       <ul
-        class="flex gap-5 fixed transition duration-150  left-[-100%] top-0 p-10 md:p-0 w-[280px] md:w-auto h-screen md:h-auto md:static flex-col md:flex-row bg-[#2F2F2F] md:bg-transparent"
+        class="flex gap-5 fixed transition duration-150  left-[-100%] top-0 py-10 px-20 md:p-0 w-[280px] md:w-auto h-screen md:h-auto md:static flex-col md:flex-row bg-[#2F2F2F] md:bg-transparent"
         id="menu">
+        <li class="w-full flex justify-center md:hidden">
+          <img src="images/logo.png" />
+        </li>
         <li class="hover:border-white border-b-2 border-transparent p-1">
           <a href="#" class="text-white">BIOGRAPHY</a>
         </li>
@@ -44,10 +47,10 @@
         <li class="hover:border-white border-b-2 border-transparent p-1">
           <a href="#" class="text-white">REPERTOIRE</a>
         </li>
-        <li class="hover:border-white border-b-2 border-transparent p-1">
+        <li class="hover:border-white border-b-2 border-transparent p-1  hidden lg:block">
           <a href="#" class="text-white">CONTACT</a>
         </li>
-        <li class=" border-2 p-1">
+        <li class=" border-2 p-1 hidden lg:block">
           <a href="#" class="text-white">EN:MN</a>
         </li>
       </ul>
@@ -58,7 +61,7 @@
           <img src="images/mongolBichig.png" class="md:h-[70%] object-contain" />
         </div>
         <div class="flex items-end">
-          <img src="images/person.png" class="object-contain lg:h-full" />
+          <img src="images/person.png" class="object-contain xl:h-full" />
         </div>
       </div>
       <div class="flex-[1] flex justify-center items-center bg-black md:bg-transparent">
@@ -77,19 +80,35 @@
     <a href="#" class="text-white text-[30px] hover:scale-150 duration-100"><i class="fa-brands fa-instagram"></i></a>
   </div>
   <section class="bg-[#131315]">
-    <div class="myContainer sm:px-11 px-5 py-8 sm:py-11">
-      <video id="video1" class="md:h-[550px] object-cover bg-black w-full" autoplay muted>
-        <source
-          src="video/y2mate.com - GVerdi La Traviata Emanuele DAguanno  Badral Chuluunbaatar  Teatro Verdi di Pisa 2021_v720P.mp4"
-          type="video/mp4">
-        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-      </video>
+    <div class="myContainer  sm:px-11 px-5 py-8 sm:py-11">
+      <div class="relative group/item">
+        <video id="video1" onclick="playPause()" class="md:h-[550px] object-cover bg-black w-full">
+          <source
+            src="video/y2mate.com - GVerdi La Traviata Emanuele DAguanno  Badral Chuluunbaatar  Teatro Verdi di Pisa 2021_v720P.mp4"
+            type="video/mp4">
+          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+        </video>
+        <button id="playButton" onclick="playPause()"
+          class="absolute top-[50%] translate-y-[-50%] drop-shadow-lg left-[50%] translate-x-[-50%] text-white text-[50px] md:text-[70px]">
+          <i class="fa-regular fa-circle-play"></i>
+        </button>
+      </div>
+
     </div>
   </section>
   <section class="bg-[#060622]">
-    <div class="myContainer sm:px-11 px-5 py-8 sm:py-11">
-      <img src="https://mariinskiy.com/photos_info/person/baritone/Badral__Chuluunbaatar/big/1575580281_329.jpg"
-        class="h-[200px] sm:h-[550px] object-cover w-full" />
+    <div class="myContainer sm:px-11 px-5 py-8 sm:py-11 ">
+      <div class="relative">
+        <img src="https://mariinskiy.com/photos_info/person/baritone/Badral__Chuluunbaatar/big/1575580281_329.jpg"
+          class="h-[200px] sm:h-[550px] object-cover w-full" />
+        <p
+          class="absolute drop-shadow-2xl md:text-xl left-3 bottom-3 right-3 md:left-10 md:bottom-10  max-w-[433px] z-50 text-white">
+          One of the most exciting
+          Mongolian singers
+          to emerge on the international scene in the past decade...
+        </p>
+      </div>
+
     </div>
   </section>
   <section class="bg-[#000]">
@@ -138,11 +157,12 @@
     </div>
 
     <div class="bg-[#060622]">
-      <div class="myContainer  sm:px-11 px-5 flex items-center justify-between h-[130px] ">
-        <div class="flex-[1]">
+      <div
+        class="myContainer relative flex-col sm:px-11 p-6 flex md:flex-row items-center justify-between md:h-[130px] ">
+        <div class="md:absolute left-0 pb-6 md:pb-0 md:px-11">
           <img src="images/logo.png" class="h-[100px]" />
         </div>
-        <div class="flex flex-row gap-10">
+        <div class="flex flex-[1] flex-row gap-10 justify-center">
           <a href="#" class="text-white text-[30px] hover:scale-150 duration-100"><i
               class="fa-brands fa-spotify"></i></a>
           <a href="#" class="text-white text-[30px] hover:scale-150 duration-100"><i
@@ -164,6 +184,23 @@
     menuBtn.addEventListener("click", () => {
       menu.classList.toggle("left-0")
     })
+
+    var myVideo = document.getElementById("video1");
+    const playButton = document.getElementById("playButton")
+
+    function playPause() {
+      if (myVideo.paused) {
+        myVideo.play();
+        // playButton.innerHTML = `<i class="fa-regular fa-circle-pause" class="invisible hover:visible"></i>`;
+        playButton.innerHTML = '';
+      }
+      else {
+        myVideo.pause();
+        playButton.innerHTML = `<i class="fa-regular fa-circle-play"></i>`;
+
+      }
+    }
+
   </script>
 
 </body>
