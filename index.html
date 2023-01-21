@@ -13,7 +13,7 @@
 </head>
 
 <body class="">
-  <header class="bg-black bg-fixed h-screen bg-cover bg-no-repeat bg-left md:bg-center"
+  <header class="select-none bg-black bg-fixed h-screen bg-cover bg-no-repeat bg-left"
     style="background-image: url(/images/үүл\ 2.png);">
     <nav
       class="myContainer z-50 fixed md:static px-5 flex justify-between items-center w-full bg-black md:bg-transparent h-[80px] md:h-[140px]">
@@ -27,7 +27,7 @@
         class="flex gap-5 fixed transition duration-150  left-[-100%] top-0 py-10 px-20 md:p-0 w-[280px] md:w-auto h-screen md:h-auto md:static flex-col md:flex-row bg-[#2F2F2F] md:bg-transparent"
         id="menu">
         <li class="w-full flex justify-center md:hidden">
-          <img src="images/logo.png" />
+          <img src="images/logo2.png" />
         </li>
         <li class="hover:border-white border-b-2 border-transparent p-1">
           <a href="#" class="text-white">BIOGRAPHY</a>
@@ -55,13 +55,14 @@
         </li>
       </ul>
     </nav>
-    <div class="flex flex-col md:flex-row overflow-hidden h-full md:h-[calc(100vh-139px)]">
+    <div
+      class="myContainer flex flex-col pt-[80px] md:pt-0 md:flex-row overflow-hidden h-full md:h-[calc(100vh-139px)]">
       <div class="flex-[3] md:flex-[1] flex h-full object-fit justify-end px-5">
         <div class="flex items-center">
-          <img src="images/mongolBichig.png" class="md:h-[70%] object-contain" />
+          <img src="images/mongol.gif" class="md:h-[70%] max-h-[300px] object-contain" />
         </div>
-        <div class="flex items-end">
-          <img src="images/person.png" class="object-contain xl:h-full" />
+        <div class="flex justify-center items-end w-full">
+          <img src="images/person.png" class="object-contain max-h-[400px]  xl:h-full" />
         </div>
       </div>
       <div class="flex-[1] flex justify-center items-center bg-black md:bg-transparent">
@@ -79,55 +80,168 @@
         class="fa-brands fa-square-twitter"></i></i></a>
     <a href="#" class="text-white text-[30px] hover:scale-150 duration-100"><i class="fa-brands fa-instagram"></i></a>
   </div>
-  <section class="bg-[#131315]">
-    <div class="myContainer  sm:px-11 px-5 py-8 sm:py-11">
-      <div class="relative group/item">
-        <video id="video1" onclick="playPause()" class="md:h-[550px] object-cover bg-black w-full">
-          <source
-            src="video/y2mate.com - GVerdi La Traviata Emanuele DAguanno  Badral Chuluunbaatar  Teatro Verdi di Pisa 2021_v720P.mp4"
-            type="video/mp4">
-          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-        </video>
-        <button id="playButton" onclick="playPause()"
-          class="absolute top-[50%] translate-y-[-50%] drop-shadow-lg left-[50%] translate-x-[-50%] text-white text-[50px] md:text-[70px]">
-          <i class="fa-regular fa-circle-play"></i>
-        </button>
+  <section class="bg-[#000]">
+    <div class="myContainer sm:px-11 px-5 pb-8 sm:pb-11">
+      <div class="grid grid-cols-1 md:grid-cols-5 h-fit gap-5 md:gap-0">
+        <div class="hidden md:block">
+          <img
+            src="https://thevendry.com/cdn-cgi/image/height=1280,width=1280,fit=contain,metadata=none/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fuploads.thevendry.co%2F23052%2F1670606468053_66450133_2830422076973423_9157054954370760704_n.jpg"
+            class="w-full object-cover md:h-full h-[180px]" />
+        </div>
+        <div class="md:col-span-3">
+          <div class="relative group/item">
+            <video id="video1" onclick="playPause()" class="md:h-[400px] object-cover bg-black w-full">
+              <source
+                src="video/y2mate.com - GVerdi La Traviata Emanuele DAguanno  Badral Chuluunbaatar  Teatro Verdi di Pisa 2021_v720P.mp4"
+                type="video/mp4">
+            </video>
+            <button id="playButton" onclick="playPause()"
+              class="absolute top-[50%] translate-y-[-50%] drop-shadow-lg left-[50%] translate-x-[-50%] text-white text-[50px] md:text-[70px]">
+              <i class="fa-regular fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5 md:gap-0">
+          <div class="flex-1 relative group/image overflow-hidden">
+            <img
+              src="https://thevendry.com/cdn-cgi/image/height=1280,width=1280,fit=contain,metadata=none/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fuploads.thevendry.co%2F23052%2F1670606468053_66450133_2830422076973423_9157054954370760704_n.jpg"
+              class=" w-full object-cover md:h-full h-[180px]" />
+            <div
+              class="absolute flex-col  duration-200 group-hover/image:scale-125 left-0 top-0 w-full h-full flex justify-center items-center text-white text-[40px] backdrop-blur-[2px] bg-white/10">
+              <i class="fa-solid fa-images"></i>
+              <p class="text-[18px] font-semibold">12 Photos</p>
+            </div>
+          </div>
+          <div class="flex-1 relative group/image overflow-hidden">
+            <img
+              src="https://thevendry.com/cdn-cgi/image/height=1280,width=1280,fit=contain,metadata=none/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fuploads.thevendry.co%2F23052%2F1670606468053_66450133_2830422076973423_9157054954370760704_n.jpg"
+              class=" w-full object-cover md:h-full h-[180px]" />
+            <div
+              class="absolute flex-col duration-200 group-hover/image:scale-125 left-0 top-0 w-full h-full flex justify-center items-center text-white text-[40px] backdrop-blur-[2px] bg-white/10">
+              <i class="fa-solid fa-film"></i>
+              <p class="text-[18px] font-semibold">1 Videos</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </section>
-  <section class="bg-[#060622]">
-    <div class="myContainer sm:px-11 px-5 py-8 sm:py-11 ">
-      <div class="relative">
-        <img src="https://mariinskiy.com/photos_info/person/baritone/Badral__Chuluunbaatar/big/1575580281_329.jpg"
-          class="h-[200px] sm:h-[550px] object-cover w-full" />
-        <p
-          class="absolute drop-shadow-2xl md:text-xl left-3 bottom-3 right-3 md:left-10 md:bottom-10  max-w-[433px] z-50 text-white">
-          One of the most exciting
-          Mongolian singers
-          to emerge on the international scene in the past decade...
+      <div>
+        <p class="text-white pt-5 md:pt-10">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+          atque corrupti
+          quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+          officia
+          deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio.
+          <span class="text-yellow-300">read more</span>
         </p>
       </div>
+    </div>
+  </section>
 
+  <section class="bg-black">
+    <div class="myContainer lg:grid gap-5 grid-cols-2  sm:px-11 px-5 py-8 sm:py-11">
+      <div class="mb-10 md:mb-0">
+        <div class="mb-5 flex flex-col items-center">
+          <p class="text-xl text-yellow-300 text-center">All performance</p>
+          <div class="bg-yellow-500 h-1 w-44  rounded-[100%]"></div>
+        </div>
+        <div class="border-2 border-yellow-300 p-5 flex mb-5 flex-col xl:flex-row gap-5">
+          <div class="flex flex-col items-center">
+            <p class="text-2xl text-yellow-300 min-w-[190px]">2023 оны 3,4 сар</p>
+
+            <div class="bg-yellow-500 h-1 w-44  rounded-[100%]"></div>
+          </div>
+          <p class="text-white lg:text-sm flex-[2]">
+            Лирико театр, Кальра хот, Итали улс
+            У.Жордано "Андре Шэнье хоер" дуурь Жерард
+          </p>
+        </div>
+        <div class="border-2 border-yellow-300 p-5 flex mb-5 flex-col xl:flex-row gap-5">
+          <div class="flex flex-col items-center">
+            <p class="text-2xl text-yellow-300 min-w-[190px]">2023 оны 2 сар</p>
+            <div class="bg-yellow-500 h-1 w-44  rounded-[100%]"></div>
+          </div>
+          <p class="text-white lg:text-sm flex-[2]">
+            Лирико театр, Кальра хот, Итали улс
+            У.Жордано "Андре Шэнье хоер" дуурь Жерард
+          </p>
+        </div>
+        <div>
+          <p class="text-xl text-yellow-300 text-center">View all performance</p>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="mb-5 flex flex-col items-center">
+          <p class="text-xl text-yellow-300 text-center">Repertoire</p>
+          <div class="bg-yellow-500 h-1 w-44  rounded-[100%]"></div>
+        </div>
+        <div
+          class="lg:text-sm flex-[1] border-2 border-yellow-300 p-5 flex mb-5 flex-col sm:flex-row justify-between gap-5">
+          <div>
+            <p class="text-yellow-300 text-center">COMPOSER</p>
+            <p class="text-white">Б.Дамидансүрэн</p>
+            <p class="text-white">Б.Тарваа</p>
+            <p class="text-white">Ж.Верди</p>
+            <p class="text-white">Ж.Верди</p>
+          </div>
+          <div>
+            <p class="text-yellow-300 text-center">WORK</p>
+            <p class="text-white">"Учиртай гурван толгой дуурь"</p>
+            <p class="text-white">"Чингис Хаан" дуурь</p>
+            <p class="text-white">"Айда" дуурь</p>
+            <p class="text-white">"Травиата" дуурь</p>
+          </div>
+          <div>
+            <p class="text-yellow-300 text-center">ROLE</p>
+            <p class="text-white">Юндэн</p>
+            <p class="text-white">Тэмүүжин</p>
+            <p class="text-white">Амонасро</p>
+            <p class="text-white">Жорж Жермон</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-xl text-yellow-300 text-center">View all Repertoire</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="bg-[#000]">
-    <div class="myContainer sm:px-11 px-5 py-8 sm:py-11">
-      <img
-        src="https://thevendry.com/cdn-cgi/image/height=1280,width=1280,fit=contain,metadata=none/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fuploads.thevendry.co%2F23052%2F1670606468053_66450133_2830422076973423_9157054954370760704_n.jpg"
-        class="h-[200px] sm:h-[550px] object-cover w-full" />
+
+    <div class="myContainer sm:px-11 px-5 pt-8 sm:pt-11 ">
+      <div class="md:h-[600px] md:grid grid-cols-5 p-5 md:p-10"
+        style="background-image:url(https://images.unsplash.com/photo-1616910137498-6df8ba3be624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80)">
+        <div class="col-span-2">
+        </div>
+        <div
+          class="col-span-3 relative p-5 border-4 border-l-0 border-b-0 border-yellow-300 flex justify-center lg:justify-start items-center">
+          <div>
+            <div class="flex flex-col-reverse lg:flex-row gap-5 text-yellow-300">
+              <ul class="lg:mt-10">
+                <li>personal assistant</li>
+                <li>+9768811-8260</li>
+                <li>+393293412502</li>
+                <li>eleganto.bb@gmail.com</li>
+                <li>http//Badralchuluunbaatar.com</li>
+              </ul>
+              <ul>
+                <h3 class="text-2xl text-white">CONTACT</h3>
+
+                <li>Massimiliano Damato</li>
+                <li>Artist manager</li>
+                <li>Italiairica-Artist Management</li>
+                <li>Via A. Consalvi, 18</li>
+                <li>00052 Cerveteri (Roma) Italia</li>
+                <li>Mobile: +393388244059</li>
+                <li>Mail: Italianirica@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="absolute right-0 bottom-0 h-1 w-[70%] bg-yellow-300"></div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="bg-[#2F2F2F]">
-    <div class="myContainer sm:px-11 px-5 py-5">
-      <p class="text-white text-center text-lg">View full performance</p>
-    </div>
-  </div>
-  <section class="bg-[#000]">
-    <div class="flex justify-center">
-      <img src="/images/contact 2.png" />
-    </div>
-  </section>
+
 
   <footer>
     <div class="bg-black">
@@ -142,8 +256,7 @@
           <a href="#" class="text-white">MEDIA</a>
         </li>
         <li class="hover:border-white border-b-2 border-transparent p-1">
-          <a href="#" class="text-white">NEWS</a>
-        </li>
+          <a href="/news.html" class="text-white">NEWS</a>
         <li class="hover:border-white border-b-2 border-transparent p-1">
           <a href="#" class="text-white">AWARDS</a>
         </li>
@@ -156,7 +269,7 @@
       </ul>
     </div>
 
-    <div class="bg-[#060622]">
+    <div class="bg-[#000]">
       <div
         class="myContainer relative flex-col sm:px-11 p-6 flex md:flex-row items-center justify-between md:h-[130px] ">
         <div class="md:absolute left-0 pb-6 md:pb-0 md:px-11">
